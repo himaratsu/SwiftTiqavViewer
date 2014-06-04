@@ -5,7 +5,7 @@ Swift を使ってtiqavのViewerアプリを作ってみました。
 
 ## Screenshot
 
-![screenshot](https://raw.githubusercontent.com/himaratsu/SwiftTiqavViewer/master/SwiftTiqavViewer/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/himaratsu/SwiftTiqavViewer/master/SwiftTiqavViewer/screenshot01.png)
 
 
 ## 説明
