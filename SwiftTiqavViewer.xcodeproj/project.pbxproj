@@ -11,7 +11,7 @@
 		D953AAA3193F286B001ECCC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953AAA2193F286B001ECCC0 /* ViewController.swift */; };
 		D953AAA6193F286B001ECCC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D953AAA4193F286B001ECCC0 /* Main.storyboard */; };
 		D953AAA8193F286B001ECCC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D953AAA7193F286B001ECCC0 /* Images.xcassets */; };
-		D953AAB4193F286B001ECCC0 /* SwiftTiqavViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953AAB3193F286B001ECCC0 /* SwiftTiqavViewerTests.swift */; };
+		D953AABE193F287B001ECCC0 /* TiqavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953AABD193F287B001ECCC0 /* TiqavCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,8 +32,7 @@
 		D953AAA5193F286B001ECCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D953AAA7193F286B001ECCC0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D953AAAD193F286B001ECCC0 /* SwiftTiqavViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTiqavViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D953AAB2193F286B001ECCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D953AAB3193F286B001ECCC0 /* SwiftTiqavViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTiqavViewerTests.swift; sourceTree = "<group>"; };
+		D953AABD193F287B001ECCC0 /* TiqavCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiqavCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				D953AA9D193F286B001ECCC0 /* SwiftTiqavViewer */,
-				D953AAB0193F286B001ECCC0 /* SwiftTiqavViewerTests */,
 				D953AA9C193F286B001ECCC0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +76,7 @@
 				D953AAA0193F286B001ECCC0 /* AppDelegate.swift */,
 				D953AAA2193F286B001ECCC0 /* ViewController.swift */,
 				D953AAA4193F286B001ECCC0 /* Main.storyboard */,
+				D953AABD193F287B001ECCC0 /* TiqavCell.swift */,
 				D953AAA7193F286B001ECCC0 /* Images.xcassets */,
 				D953AA9E193F286B001ECCC0 /* Supporting Files */,
 			);
@@ -88,23 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				D953AA9F193F286B001ECCC0 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D953AAB0193F286B001ECCC0 /* SwiftTiqavViewerTests */ = {
-			isa = PBXGroup;
-			children = (
-				D953AAB3193F286B001ECCC0 /* SwiftTiqavViewerTests.swift */,
-				D953AAB1193F286B001ECCC0 /* Supporting Files */,
-			);
-			path = SwiftTiqavViewerTests;
-			sourceTree = "<group>";
-		};
-		D953AAB1193F286B001ECCC0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D953AAB2193F286B001ECCC0 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -208,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D953AABE193F287B001ECCC0 /* TiqavCell.swift in Sources */,
 				D953AAA3193F286B001ECCC0 /* ViewController.swift in Sources */,
 				D953AAA1193F286B001ECCC0 /* AppDelegate.swift in Sources */,
 			);
@@ -217,7 +200,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D953AAB4193F286B001ECCC0 /* SwiftTiqavViewerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
