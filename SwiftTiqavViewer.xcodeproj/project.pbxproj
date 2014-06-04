@@ -12,7 +12,7 @@
 		D953AAA6193F286B001ECCC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D953AAA4193F286B001ECCC0 /* Main.storyboard */; };
 		D953AAA8193F286B001ECCC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D953AAA7193F286B001ECCC0 /* Images.xcassets */; };
 		D953AABE193F287B001ECCC0 /* TiqavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953AABD193F287B001ECCC0 /* TiqavCell.swift */; };
-		D953AAC3193F31EF001ECCC0 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = D953AAC2193F31EF001ECCC0 /* screenshot.png */; };
+		D953AAC5193F32E0001ECCC0 /* screenshot01.png in Resources */ = {isa = PBXBuildFile; fileRef = D953AAC4193F32E0001ECCC0 /* screenshot01.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,7 @@
 		D953AAA7193F286B001ECCC0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D953AAAD193F286B001ECCC0 /* SwiftTiqavViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTiqavViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D953AABD193F287B001ECCC0 /* TiqavCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiqavCell.swift; sourceTree = "<group>"; };
-		D953AAC2193F31EF001ECCC0 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
+		D953AAC4193F32E0001ECCC0 /* screenshot01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot01.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 		D953AABF193F30CB001ECCC0 /* screenshot */ = {
 			isa = PBXGroup;
 			children = (
-				D953AAC2193F31EF001ECCC0 /* screenshot.png */,
+				D953AAC4193F32E0001ECCC0 /* screenshot01.png */,
 			);
 			name = screenshot;
 			sourceTree = "<group>";
@@ -182,8 +182,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D953AAC5193F32E0001ECCC0 /* screenshot01.png in Resources */,
 				D953AAA6193F286B001ECCC0 /* Main.storyboard in Resources */,
-				D953AAC3193F31EF001ECCC0 /* screenshot.png in Resources */,
 				D953AAA8193F286B001ECCC0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
