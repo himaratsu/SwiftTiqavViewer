@@ -1,13 +1,13 @@
 SwiftTiqavViewer
 ================
 
-Swift を使ってtiqavのViewerアプリを作ってみました。  
+Swift を使って[tiqav](http://tiqav.com/)のViewerアプリを作ってみました。  
 
 ## Screenshot
 
 ![screenshot](https://raw.githubusercontent.com/himaratsu/SwiftTiqavViewer/master/SwiftTiqavViewer/screenshot01.png)
 
-
 ## 説明
 
-ブログに書きました
+[こちらのブログ](http://himaratsu.hatenablog.com/entry/swift/tiqav)で説明しています。
+
