@@ -10,9 +10,10 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, NSURLConnectionDelegate {
     
-    @IBOutlet var tableView : UITableView
+    @IBOutlet var tableView : UITableView!
+    
     let baseUrl = "http://img.tiqav.com/"
-    var tiqavs: String[] = []
+    var tiqavs = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,14 +35,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func fetchResponse(res: NSURLResponse!, data: NSData!, error: NSError!) {
         let json: NSArray = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil) as NSArray
         
-        tiqavs = []
+        tiqavs = [String]()
         
-        for img: NSDictionary! in json {
-            var imgId = img.objectForKey("id") as String
-            var ext = img.objectForKey("ext") as String
+        for img in json {
+            let imgId = img["id"] as String
+            let ext = img["ext"] as String
             
-            var imageUrl = baseUrl + imgId + "." + ext
-            tiqavs += imageUrl
+            let imageUrl = (baseUrl + imgId + "." + ext) as String
+            tiqavs.append(imageUrl)
         }
         
         dispatch_async(dispatch_get_main_queue(), {
@@ -49,15 +50,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             })
     }
     
-    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int  {
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 120
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tiqavs.count
     }
     
-    func tableView(tableView: UITableView!, heightForRowAtIndexPath indexPath: NSIndexPath!) -> CGFloat {
-        return 120;
-    }
-    
-    func tableView(tableView: UITableView?, cellForRowAtIndexPath indexPath:NSIndexPath!) -> UITableViewCell! {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: TiqavCell = self.tableView.dequeueReusableCellWithIdentifier("Cell") as TiqavCell
         
         var imageUrl = tiqavs[indexPath.row] as String
@@ -77,22 +78,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             dispatch_async(q_main, {
                 cell.tiqavImageView.image = image;
                 cell.layoutSubviews()
-                })
             })
+        })
         return cell;
     }
-    
-    func tableView(tableView: UITableView?, didSelectRowAtIndexPath indexPath:NSIndexPath!) {
+
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var text: String = tiqavs[indexPath.row]
         
         // show alert
-        let alertView: UIAlertView = UIAlertView()
-        alertView.title = "taped"
-        alertView.message = text
-        alertView.addButtonWithTitle("close")
-        alertView.show()
+        let alert = UIAlertController(title: "taped", message: text, preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "close", style: .Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
-    
+
     @IBAction func reloadBtnTouched(sender : AnyObject) {
         self.reload()
         self.tableView.scrollRectToVisible(CGRect(x:0 , y: 0, width: 1,height:1), animated: true)

@@ -9,8 +9,8 @@
 import UIKit
 
 class TiqavCell: UITableViewCell {
-    @IBOutlet var tiqavImageView : UIImageView
-    @IBOutlet var tiqavUrlLabel : UILabel
+    @IBOutlet var tiqavImageView : UIImageView!
+    @IBOutlet var tiqavUrlLabel : UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
