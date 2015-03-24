@@ -15,16 +15,6 @@
 		D953AAC5193F32E0001ECCC0 /* screenshot01.png in Resources */ = {isa = PBXBuildFile; fileRef = D953AAC4193F32E0001ECCC0 /* screenshot01.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D953AAAE193F286B001ECCC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D953AA93193F286B001ECCC0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D953AA9A193F286B001ECCC0;
-			remoteInfo = SwiftTiqavViewer;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		D953AA9B193F286B001ECCC0 /* SwiftTiqavViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTiqavViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D953AA9F193F286B001ECCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,20 +22,12 @@
 		D953AAA2193F286B001ECCC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D953AAA5193F286B001ECCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D953AAA7193F286B001ECCC0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D953AAAD193F286B001ECCC0 /* SwiftTiqavViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTiqavViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D953AABD193F287B001ECCC0 /* TiqavCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiqavCell.swift; sourceTree = "<group>"; };
 		D953AAC4193F32E0001ECCC0 /* screenshot01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot01.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D953AA98193F286B001ECCC0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D953AAAA193F286B001ECCC0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				D953AA9B193F286B001ECCC0 /* SwiftTiqavViewer.app */,
-				D953AAAD193F286B001ECCC0 /* SwiftTiqavViewerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,24 +103,6 @@
 			productReference = D953AA9B193F286B001ECCC0 /* SwiftTiqavViewer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D953AAAC193F286B001ECCC0 /* SwiftTiqavViewerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D953AABA193F286B001ECCC0 /* Build configuration list for PBXNativeTarget "SwiftTiqavViewerTests" */;
-			buildPhases = (
-				D953AAA9193F286B001ECCC0 /* Sources */,
-				D953AAAA193F286B001ECCC0 /* Frameworks */,
-				D953AAAB193F286B001ECCC0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D953AAAF193F286B001ECCC0 /* PBXTargetDependency */,
-			);
-			name = SwiftTiqavViewerTests;
-			productName = SwiftTiqavViewerTests;
-			productReference = D953AAAD193F286B001ECCC0 /* SwiftTiqavViewerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -151,10 +114,6 @@
 				TargetAttributes = {
 					D953AA9A193F286B001ECCC0 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					D953AAAC193F286B001ECCC0 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = D953AA9A193F286B001ECCC0;
 					};
 				};
 			};
@@ -172,7 +131,6 @@
 			projectRoot = "";
 			targets = (
 				D953AA9A193F286B001ECCC0 /* SwiftTiqavViewer */,
-				D953AAAC193F286B001ECCC0 /* SwiftTiqavViewerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -185,13 +143,6 @@
 				D953AAC5193F32E0001ECCC0 /* screenshot01.png in Resources */,
 				D953AAA6193F286B001ECCC0 /* Main.storyboard in Resources */,
 				D953AAA8193F286B001ECCC0 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D953AAAB193F286B001ECCC0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,22 +159,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D953AAA9193F286B001ECCC0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D953AAAF193F286B001ECCC0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D953AA9A193F286B001ECCC0 /* SwiftTiqavViewer */;
-			targetProxy = D953AAAE193F286B001ECCC0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D953AAA4193F286B001ECCC0 /* Main.storyboard */ = {
@@ -342,42 +278,6 @@
 			};
 			name = Release;
 		};
-		D953AABB193F286B001ECCC0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftTiqavViewer.app/SwiftTiqavViewer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwiftTiqavViewerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		D953AABC193F286B001ECCC0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftTiqavViewer.app/SwiftTiqavViewer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwiftTiqavViewerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -395,15 +295,6 @@
 			buildConfigurations = (
 				D953AAB8193F286B001ECCC0 /* Debug */,
 				D953AAB9193F286B001ECCC0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D953AABA193F286B001ECCC0 /* Build configuration list for PBXNativeTarget "SwiftTiqavViewerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D953AABB193F286B001ECCC0 /* Debug */,
-				D953AABC193F286B001ECCC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

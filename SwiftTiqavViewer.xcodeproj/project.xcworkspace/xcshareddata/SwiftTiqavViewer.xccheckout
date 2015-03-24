@@ -14,7 +14,7 @@
 		<string>https://github.com/himaratsu/SwiftTiqavViewer.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SwiftTiqavViewer.xcodeproj/project.xcworkspace</string>
+	<string>SwiftTiqavViewer.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>62343BB9226F3427171AB77AF34820F10B8B2AEC</key>
