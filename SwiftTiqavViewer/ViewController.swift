@@ -24,8 +24,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func reload() {
         // Thanks to tiqav api! ( http://dev.tiqav.com/ )
         let URL = NSURL(string: "http://api.tiqav.com/search/random.json")
-        let Req = NSURLRequest(URL: URL)
-        let connection: NSURLConnection = NSURLConnection(request: Req, delegate: self, startImmediately: false)
+        let Req = NSURLRequest(URL: URL!)
+        let connection: NSURLConnection = NSURLConnection(request: Req, delegate: self, startImmediately: false)!
         
         NSURLConnection.sendAsynchronousRequest(Req,
             queue: NSOperationQueue.mainQueue(),
@@ -70,10 +70,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var q_main: dispatch_queue_t  = dispatch_get_main_queue();
         
         dispatch_async(q_global, {
-            var imageURL: NSURL = NSURL.URLWithString(imageUrl)
-            var imageData: NSData = NSData(contentsOfURL: imageURL)
+            var imageURL: NSURL = NSURL(string:imageUrl)!
+            var imageData: NSData = NSData(contentsOfURL: imageURL)!
             
-            var image: UIImage = UIImage(data: imageData)
+            var image: UIImage = UIImage(data: imageData)!
             
             dispatch_async(q_main, {
                 cell.tiqavImageView.image = image;
